@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module BotMessengeer
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    config.load_defaults 5.1
     config.paths.add File.join('app', 'bot'), glob: File.join('**', '*.rb')
     config.autoload_paths += Dir[Rails.root.join('app', 'bot', '*')]
 
